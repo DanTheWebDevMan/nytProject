@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <!-- jQuery -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Reset   -->
+    <link rel="stylesheet" type="text/css" href="reset.css">
+    <!-- My Style.css -->
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <!-- Link to Font Awesome, for the Icon -->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css" integrity="sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ" crossorigin="anonymous">
+
+    <title>NYT Search</title>
+</head>
+<body>
+
+    <div id="top">
+            <i class="far fa-newspaper"></i>  New York Times Search
+    </div>
+        <form>
+            <div id="formTopBar"><h4><i class="far fa-newspaper"></i> Search Parameters</h4></div>
+            <div class="form-group">
+                <label for="exampleFormControlInput1">Search Term</label>
+                <input type="search" class="form-control" id="searchTerm">
+            </div>
+            <div class="form-group">
+                <label for="exampleFormControlSelect1">Number of Records to Retrieve</label>
+                <select class="form-control" id="exampleFormControlSelect1">
+                <option>1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                </select>
+            </div>
+            <div class="form-group">
+                <label for="startYearText">Start Year (Optional)</label>
+                <textarea class="form-control" id="startYearEntry" rows="1"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="endYearText">End Year (Optional)</label>
+                <textarea class="form-control" id="endYearEntry" rows="1"></textarea>
+            </div>
+            <button class="btn btn-primary" type="search" id="searchButton"><i class="fas fa-search"></i>Search</button>
+        </form>
+    
+</body>
+</html>
